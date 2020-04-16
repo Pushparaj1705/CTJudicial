@@ -6,12 +6,9 @@
       <class name="com.test.CTJudicialTest">
         <methods>
           <include name="CityTrumbull"/>
-          <include name="CityFairfield"/>
           <include name="CityNorwalk"/>
           <include name="CityStamford"/>
-          <include name="CityShelton"/>
           <include name="launchbrowser"/>
-          <include name="closeApplication"/>
         </methods>
       </class> <!-- com.test.CTJudicialTest -->
     </classes>

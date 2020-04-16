@@ -37,5 +37,4 @@ public class CTJudicialPath {
 			@FindBy(id="ctl00_cphBody_hlnktownlist")
 			public static WebElement BackToPage;
 			
-
 }

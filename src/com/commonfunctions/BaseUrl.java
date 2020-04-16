@@ -5,6 +5,7 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Properties;
 import java.util.Set;
@@ -61,12 +62,12 @@ public class BaseUrl {
 				driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			}
 			
-			@AfterSuite
-			public void closeApplication()
-			{
-				logger.info("Execution Done, Closing the browser");
-				driver.quit();
-			}
+//			@AfterSuite
+//			public void closeApplication()
+//			{
+//				logger.info("Execution Done, Closing the browser");
+//				driver.quit();
+//			}
 
 
 			public void OpenNewTab() throws AWTException {
@@ -76,6 +77,7 @@ public class BaseUrl {
 				robot.keyPress(KeyEvent.VK_ENTER);
 				robot.keyRelease(KeyEvent.VK_ENTER);
 			}
+			
 			public void OpenNewWindow() throws AWTException {
 				Robot robot = new Robot();
 				robot.keyPress(KeyEvent.VK_DOWN);
@@ -90,8 +92,9 @@ public class BaseUrl {
 			Set<String> winid = driver.getWindowHandles();
 	        Iterator<String> iter = winid.iterator();
 	        iter.next();
-
 	        String tab = iter.next();
-	        driver.switchTo().window(tab);
+	        driver.switchTo().window(tab);	
+			
 			}
 }
+			
