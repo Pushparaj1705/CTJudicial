@@ -1,0 +1,6 @@
+Step 1 : Install Eclipse: Eclipse IDE for Enterprise Java Developers.
+Step 2 : Install Java : jdk 8.0
+Step 3 : Install TestNG in Eclipse :  http://dl.bintray.com/testng-team/testng-eclipse-release/
+Step 4 : Import File
+Step 5 : Go to pom.xml and click on save
+Step 6 : Open (CTJudicialTest) file, and Run Code : Ctrl+F11
